@@ -2,16 +2,19 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Test Sonuçları</title>
     <style>
         body { position: relative; min-height: 100vh; }
         footer { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; }
     </style>
 </head>
 <body>
-    <h1>Quiz</h1>
-    <a href="{{ url_for('quiz') }}">Sınava Başla</a>
+    <h1>Sonuçlar</h1>
+    <p>Skorunuz: {{ score }}%</p>
+    <p>Kişisel En Yüksek Skorunuz: {{ user_highscore }}%</p>
+    <p>Genel En Yüksek Skor: {{ highscore }}%</p>
+    <a href="{{ url_for('quiz') }}">Yeniden Dene</a>
     <footer>Developed by Goktug Kahraman</footer>
 </body>
 </html>
-<!--karsılama ekrani yönlendirme -->
+<!--sonuclari görüntüleme ekrani -->

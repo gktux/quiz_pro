@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style> 
+    /* Not: Bu görevin amacı back-end becerilerinizi ölçmektir. Bu nedenle tasarıma ekstra özen göstermenize gerek yoktur.
+dikkate alarak çok önem vermedim */ 
+        body { position: relative; min-height: 100vh; }
+        footer { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; }
+        input[type="submit"] {
+        font-size: 20px; 
+        padding: 15px 30px; 
+        background-color: #4CAF50; 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form method="post" action="/quiz">
+        <h2>Adınız:</h2>
+        <input type="text" name="username" required>
+
+        <!--sohbbet botu -->
+        <h2>1. Discord.py ile bir bot oluşturmak için hangi Python kütüphanesi kullanılır?</h2>
+        <input type="radio" name="question1" value="Olayı görmezden gelerek"> Olayı görmezden gelerek<br>
+        <input type="radio" name="question1" value="Olayı dinleyip yanıt vererek"> Olayı dinleyip yanıt vererek<br>
+        <input type="radio" name="question1" value="Olayı manuel olarak oluşturup silerek"> Olayı manuel olarak oluşturup silerek<br>
+
+        <!-- Python ile dc bot -->
+        <h2>Discord.py ile bir bot oluşturmak için hangi Python kütüphanesi kullanılır?</h2>
+        <input type="radio" name="question2" value="discord()"> discord()<br>
+        <input type="radio" name="question2" value="telepot()"> telepot()<br>
+        <input type="radio" name="question2" value="flask()"> flask()<br>
+
+        <!-- pytno ile web gelistrie örnke sorusu -->
+        <h2>"Computer Vision" projelerinde görüntü işleme için yaygın olarak kullanılan bir Python kütüphanesi hangisidir?</h2>
+        <input type="radio" name="question3" value="numpy"> numpy<br>
+        <input type="radio" name="question3" value="Flask"> Flask<br>
+        <input type="radio" name="question3" value="OpenCV"> OpenCV<br>
+
+        <!-- dogal dil isleme sorus -->
+        <h2>bir web sitesindeki tüm bağlantıları toplamak veya belirli bir sınıfa sahip öğeleri çekmek için hangi kütüphane kullanılır?</h2>
+        <input type="radio" name="question4" value="BeautifulSoup"> BeautifulSoup<br>
+        <input type="radio" name="question4" value="NumPy"> NumPy<br>
+        <input type="radio" name="question4" value="TensorFlow"> TensorFlow<br>
+
+        <!-- derin ogrenme  -->
+        <h2>5. Derin Öğrenme için Python'da ki hangi kütüphaneyi kullanmak uygundur?</h2>
+        <input type="radio" name="question5" value="TensorFlow"> TensorFlow<br>
+        <input type="radio" name="question5" value="OpenCV"> OpenCV<br>
+        <input type="radio" name="question5" value="ImageAI"> ImageAI<br>
+
+
+
+         <!-- flas  sorusi-->
+        <h2>6. Flask Python'da hangi amaçla kullanılır?</h2>
+        <input type="radio" name="question6" value="Veritabanı sorgularını hızlandırmak için"> Veritabanı sorgularını hızlandırmak için<br>
+        <input type="radio" name="question6" value="Web uygulamaları geliştirmek için"> Web uygulamaları geliştirmek için<br>
+        <input type="radio" name="question6" value="Python programlarını derlemek için"> Python programlarını derlemek için<br>
+
+
+        <br>
+        <input type="submit" value="Gönder">
+    </form>
+
+    <div style="position: absolute; top: 10px; right: 10px;">
+        <p>En Yüksek Skor: 100%</p>
+    </div>
+    <footer>Göktuğ Kahraman tarafından geliştirilmiştir. Tüm hakları gizlidir.
+    </footer>
+</body>
+</html>
